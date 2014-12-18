@@ -38,10 +38,10 @@
 
     NSParameterAssert(clientId != nil && [clientId length] > 0);
     
-	self = [super init];
-	if (!self) {
+    self = [super init];
+    if (!self) {
         return nil;
-	}
+    }
 
     self.clientId = clientId;
     self.scopes = scopes;
@@ -61,7 +61,7 @@
 
 - (void)start
 {
-	[self.signIn authenticate];
+    [self.signIn authenticate];
 }
 
 - (void)cancel
@@ -87,7 +87,7 @@
         return YES;
     }
 
-	return [self.signIn handleURL:url sourceApplication:sourceApplication annotation:annotation];
+    return [self.signIn handleURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
 - (void)handleDidBecomeActive
@@ -152,7 +152,7 @@
         return;
     }
 
-	if (error) {
+    if (error) {
         // Filter login cancelling
         // TODO: Check login via Safari and tap "Cancel". It should return error!
         if ([error.domain isEqualToString:@"com.google.GooglePlusPlatform"] && error.code == -1 && [[error localizedDescription] isEqualToString:@"Unknown error"]) {
@@ -161,7 +161,7 @@
         }
 
         [self didFailWithError:error];
-	} else {
+    } else {
         NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithCapacity:4];
 
         [data setValue:auth.accessToken forKey:@"access_token"];
@@ -170,7 +170,7 @@
         [data setValue:auth.expirationDate forKey:@"expires"];
 
         [self didAuthenticateWithData:data];
-	}
+    }
 }
 
 @end
