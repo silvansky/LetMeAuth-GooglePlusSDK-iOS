@@ -9,10 +9,8 @@
 
 #import <Foundation/Foundation.h>
 #import <LetMeAuth/LetMeAuth.h>
+#import "LMAGooglePlusSDKConstants.h"
 
-
-extern NSString *const LMAGooglePlusSDKClientId;
-extern NSString *const LMAGooglePlusSDKScope;
 
 
 @interface LMAGooglePlusSDKProvider : NSObject <LMAProvider>

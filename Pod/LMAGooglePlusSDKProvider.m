@@ -12,10 +12,6 @@
 #import <googleplus-ios-sdk/GTMOAuth2Authentication.h>
 
 
-NSString *const LMAGooglePlusSDKClientId = @"LMAGooglePlusSDKClientId";
-NSString *const LMAGooglePlusSDKScope = @"LMAGooglePlusSDKScope";
-
-
 @interface LMAGooglePlusSDKProvider () <GPPSignInDelegate>
 
 @property (strong, nonatomic) GPPSignIn *signIn;
