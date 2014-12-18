@@ -90,9 +90,10 @@
     return [self.signIn handleURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
-- (void)handleDidBecomeActive
+- (BOOL)handleDidBecomeActive
 {
     [self didCancel];
+    return YES;
 }
 
 #pragma mark Private methods
