@@ -12,7 +12,14 @@
 #import "LMAGooglePlusSDKConstants.h"
 
 
+/*
+ Return
 
+ LMAOAuth2AccessToken => NSString. Access token
+ LMAOAuth2RefreshToken => NSString. Refresh token
+ LMAOAuth2ExpiresIn => NSNumber. Time when token expires
+ LMAExpiresAt => NSDate. Expiration date
+ */
 @interface LMAGooglePlusSDKProvider : NSObject <LMAProvider>
 
 @end

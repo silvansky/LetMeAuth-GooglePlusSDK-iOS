@@ -164,10 +164,10 @@
     } else {
         NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithCapacity:4];
 
-        [data setValue:auth.accessToken forKey:@"access_token"];
-        [data setValue:auth.refreshToken forKey:@"refresh_token"];
-        [data setValue:auth.expiresIn forKey:@"expires_in"];
-        [data setValue:auth.expirationDate forKey:@"expires"];
+        [data setValue:auth.accessToken forKey:LMAOAuth2AccessToken];
+        [data setValue:auth.refreshToken forKey:LMAOAuth2RefreshToken];
+        [data setValue:auth.expiresIn forKey:LMAOAuth2ExpiresIn];
+        [data setValue:auth.expirationDate forKey:LMAExpiresAt];
 
         [self didAuthenticateWithData:data];
     }
