@@ -1,6 +1,6 @@
 {
   "name": "LetMeAuth-GooglePlusSDK-iOS",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "authors": {
     "Evgeniy Yurtaev": "evgeniyyurt@gmail.com",
     "Alexey Aleshkov": "djmadcat@gmail.com"
@@ -13,7 +13,7 @@
   "homepage": "https://github.com/silvansky/LetMeAuth-GooglePlusSDK-iOS",
   "source": {
     "git": "https://github.com/silvansky/LetMeAuth-GooglePlusSDK-iOS.git",
-    "tag": "2.0.4"
+    "tag": "2.0.5"
   },
   "platforms": {
     "ios": "6.0"
@@ -25,7 +25,7 @@
       "~> 2.0"
     ],
     "googleplus-ios-sdk": [
-      "1.7"
+      "~> 1.7.1"
     ]
   }
 }
