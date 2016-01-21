@@ -8,8 +8,8 @@
 
 
 #import "LMAGooglePlusSDKProvider.h"
-#import <GooglePlusOpenSource/GoogleOpenSource.h>
-#import <GooglePlusOpenSource/GTMOAuth2Authentication.h>
+#import "GooglePlus.h"
+#import "GTMOAuth2Authentication.h"
 
 
 @interface LMAGooglePlusSDKProvider () <GPPSignInDelegate>
